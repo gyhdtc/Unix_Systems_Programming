@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int makeargv(const char *s,  const char *delimiters, char ***argvp);
 int main(int argc,  char *argv[]) {
-    char delim[] =  "\t";
+    char delim[] =  " ";
     int i;
     char **myargv;
     int numtokens;
@@ -10,7 +10,7 @@ int main(int argc,  char *argv[]) {
         fprintf (stderr, "Usage: %s string\n", argv[0]);
         return 1;
     }
-    if ((numtokens = makeargv (argv[1], delim, myargv)) == -1) {
+    if ((numtokens = makeargv (argv[1], delim, &myargv)) == -1) {
         fprintf (stderr, "Failed to construct an argument array for %s\n", argv[1]);
         return 1;
     }
