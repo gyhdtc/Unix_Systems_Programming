@@ -1,8 +1,8 @@
- #include <limits.h>
- #include <stdio.h>
- #include <stdlib.h>
- #include <string.h>
-
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+//#include "keeploglib.c"
 #ifndef MAX_CANON
 #define MAX_CANON 8192
 #endif
@@ -30,6 +30,6 @@ int main(int argc, char *argv[]){
         }
     }
     printf("\n\n>>>>>>list of commands executed is:\n");
-    ishowhistory(stdout);
+    showhistory(stdout);
     return 0;
 }
