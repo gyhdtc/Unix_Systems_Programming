@@ -1,7 +1,7 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "editor.fontSize": 24,
+    "editor.fontSize": 18,
     "files.associations": {
         "ostream": "cpp"
     }
